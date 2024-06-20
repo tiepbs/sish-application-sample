@@ -52,10 +52,11 @@ Một khi bạn đã có ssh access tới JMango360 gitlab hoặc thực hiện 
 
 Ví dụ cụ thể: (nếu bạn chỉ có một cặp key or key mặc định của bạn là key đã được add vào SISH server thì không cần specify the private key khi gõ lệnh dưới)
 
-`ssh -i ~/.ssh/id_rsa -R tbzoho:80:localhost:8000 tunnel.plchi.dev
+```ssh -i ~/.ssh/id_rsa -R tbzoho:80:localhost:8000 tunnel.plchi.dev
 /* Ở đây your_sub_domain = "tbzoho"
 remote_port = 80
 your_custom_domain = tunnel.jmango360.dev */
+```
 - Giải nghĩa:
 
 Với câu lệnh này tôi đang dùng private key của tôi có tên là id_rsa để trong thư mục ~/.ssh để thực hiện tunnel map localhost:8000 trên máy tôi với https://tbzho.tunnel.plchi.dev
